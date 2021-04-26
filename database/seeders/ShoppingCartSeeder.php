@@ -25,6 +25,8 @@ class ShoppingCartSeeder extends Seeder
                     ->join('categories AS parentCategories', 'daughterCategories.category_id', '=', 'parentCategories.id')
                     ->where('daughterCategories.status', '=', Category::ACTIVE)
                     ->where('parentCategories.status', '=', Category::ACTIVE)
+                    ->where('products.stock', '>', 0)
+                    ->where('products.price', '>', 0)
                     ->get()
                     ->random(mt_rand(1, 5))
                     ->pluck('id');
