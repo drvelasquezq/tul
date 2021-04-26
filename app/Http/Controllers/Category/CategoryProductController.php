@@ -5,30 +5,11 @@ namespace App\Http\Controllers\Category;
 use App\Http\Controllers\ApiController;
 use App\Models\Category;
 use App\Models\Product;
+use Aws\S3\Exception\S3Exception;
 use Illuminate\Http\Request;
 
 class CategoryProductController extends ApiController
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -37,9 +18,9 @@ class CategoryProductController extends ApiController
      */
     public function store(Request $request, Category $category)
     {
+        $this->validateThatItIsADaugtherCategory($category);
         $this->validateThatTheStatusOfTheCategoryIsActive($category);
         $this->validateThatTheStatusOfTheCategoryIsActive($category->category);
-        $this->validateThatItIsADaugtherCategory($category);
 
         $rules = [
             'image' => 'required|image',
@@ -52,7 +33,11 @@ class CategoryProductController extends ApiController
 
         $this->validate($request, $rules);
 
-        $imageModulePath = env('AWS_URL', '') . '/' . $request->file('image')->store('images', 's3');
+        try {
+            $imageModulePath = env('AWS_URL', '') . '/' . $request->file('image')->store('images', 's3');
+        } catch(S3Exception $S3Exception) {
+            $imageModulePath = 'https://drvelasquez.s3.amazonaws.com/' . mt_rand(1, 20) . '.jpg';
+        }
 
         $data = $request->all();
         $data['image'] = $imageModulePath;
@@ -61,50 +46,5 @@ class CategoryProductController extends ApiController
         $product = Product::create($data);
 
         return $this->showOne($product);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Category $category)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Category $category)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Category $category)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Category $category)
-    {
-        //
     }
 }
