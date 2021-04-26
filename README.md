@@ -2,13 +2,14 @@
 <h3 class="description" style="text-align: left;"><strong>Cat&aacute;logo de productos sencillo, exponiendo una API desde Laravel para TUL</strong></h3>
 <div class="description" style="text-align: left;">&nbsp;</div>
 <div class="description" style="text-align: left;">
-<div class="description" style="text-align: left;"><strong>El siguiente es un corto v&iacute;deo que intenta mostrar como utilizar la API relacionando con la guia:</strong></div>
+<div class="description" style="text-align: left;"><strong>El siguiente es un corto v&iacute;deo que intenta mostrar como utilizar la API relacionado con la guia:</strong></div>
 <div class="description" style="text-align: left;"><strong><a href="https://www.youtube.com/watch?v=ZYy70_Stm9Q" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ZYy70_Stm9Q</a></strong></div>
 </div>
 <div class="description" style="text-align: left;">&nbsp;</div>
 <div class="description" style="text-align: left;"><strong>URL en la que se proporciona la informaci&oacute;n necesaria para consumir la API (gu&iacute;a):</strong></div>
 <div class="description" style="text-align: left;"><strong> <a href="https://documenter.getpostman.com/view/15089643/TzJyaacX" target="_blank">https://documenter.getpostman.com/view/15089643/TzJyaacX</a><br /></strong></div>
 <div class="description" style="text-align: left;">&nbsp;</div>
+<div class="description" style="text-align: left;">Puede utilizar <span style="color: #ff0000;"><strong><a href="https://prueba-tul.herokuapp.com">https://prueba-tul.herokuapp.com</a></strong> <span style="color: #000000;">en vez de <span style="color: #ff0000;">{{host}}<span style="color: #000000;">, </span><span style="color: #000000;">esto hace que no se tenga la necesidad de instalar o crear una instancia de la API si no lo desea, por ejemplo: <a href="https://prueba-tul.herokuapp.com/catalogue" target="_blank">https://prueba-tul.herokuapp.com/catalogue</a></span></span></span></span></div>
 <div class="description" style="text-align: left;">&nbsp;</div>
 <h3 class="description" style="text-align: left;"><strong>Prueba Laravel</strong></h3>
 <div class="description" style="text-align: left;">Esta prueba consiste en realizar un cat&aacute;logo de productos sencillo, exponiendo un API desde Laravel, donde la funcionalidad requerida ser&aacute;:</div>
@@ -33,7 +34,7 @@
 </div>
 <ul>
 <li>Creaci&oacute;n de las tablas y sus relaciones: <a href="https://www.youtube.com/watch?v=QgW-zDsIPpg" target="_blank">https://www.youtube.com/watch?v=QgW-zDsIPpg</a></li>
-<li>Instalaci&oacute;n de una instancia del proyecto: <a href="https://www.youtube.com/watch?v=ULWc07cMnVg" target="_blank">https://www.youtube.com/watch?v=ULWc07cMnVg</a> En caso de no tener un interpete de php y que reciba las peticiones, luego de ejecutar los pasos escribir el comando <strong>php artisan serve,&nbsp;</strong>este devolver&aacute; un host valido y funcional como <a href="http://127.0.0.1:8000,">http://127.0.0.1:8000,</a> si el servicio de AWS falla se asignar&aacute; una imagen de producto aleatoria (puede solicitar acesos para que esto no suceda de ser necesario).</li>
+<li>Instalaci&oacute;n de una instancia del proyecto: <a href="https://www.youtube.com/watch?v=ULWc07cMnVg" target="_blank">https://www.youtube.com/watch?v=ULWc07cMnVg</a> En caso de no tener un interprete de php y que reciba las peticiones: luego de ejecutar los pasos escribir el comando <strong>php artisan serve - </strong>este devolver&aacute; un host valido y funcional como <a href="http://127.0.0.1:8000,">http://127.0.0.1:8000</a>. Si el servicio de AWS falla se asignar&aacute; una imagen de producto aleatoria (puede solicitar acesos para que esto no suceda de ser necesario).</li>
 <li>Pruebas unitarias: <a href="https://www.youtube.com/watch?v=K4pwd-FQqCc" target="_blank">https://www.youtube.com/watch?v=K4pwd-FQqCc</a></li>
 </ul>
 <p>&nbsp;</p>
