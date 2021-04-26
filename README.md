@@ -33,7 +33,7 @@
 </div>
 <ul>
 <li>Creaci&oacute;n de las tablas y sus relaciones: <a href="https://www.youtube.com/watch?v=QgW-zDsIPpg" target="_blank">https://www.youtube.com/watch?v=QgW-zDsIPpg</a></li>
-<li>Instalaci&oacute;n de una instancia del proyecto: <a href="https://www.youtube.com/watch?v=ULWc07cMnVg" target="_blank">https://www.youtube.com/watch?v=ULWc07cMnVg</a> En caso de no tener un interpete de php y que reciba las peticiones, luego de ejecutar los pasos mencionados ejecutar el comando <strong>php artisan serve,&nbsp;</strong>este devolver&aacute; un host valido y funcional como http://127.0.0.1:8000</li>
+<li>Instalaci&oacute;n de una instancia del proyecto: <a href="https://www.youtube.com/watch?v=ULWc07cMnVg" target="_blank">https://www.youtube.com/watch?v=ULWc07cMnVg</a> En caso de no tener un interpete de php y que reciba las peticiones, luego de ejecutar los pasos escribir el comando <strong>php artisan serve,&nbsp;</strong>este devolver&aacute; un host valido y funcional como <a href="http://127.0.0.1:8000,">http://127.0.0.1:8000,</a> si el servicio de AWS falla se asignar&aacute; una imagen de producto aleatoria (puede solicitar acesos para que esto no suceda de ser necesario).</li>
 <li>Pruebas unitarias: <a href="https://www.youtube.com/watch?v=K4pwd-FQqCc" target="_blank">https://www.youtube.com/watch?v=K4pwd-FQqCc</a></li>
 </ul>
 <p>&nbsp;</p>
