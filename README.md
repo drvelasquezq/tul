@@ -7,7 +7,7 @@
 </div>
 <div class="description" style="text-align: left;">&nbsp;</div>
 <div class="description" style="text-align: left;"><strong>URL en la que se proporciona la informaci&oacute;n necesaria para consumir la API (gu&iacute;a):</strong></div>
-<div class="description" style="text-align: left;"><strong> <a href="https://documenter.getpostman.com/view/15089643/TzJyaacX" target="_blank">https://documenter.getpostman.com/view/15089643/TzJyaacX</a><br /></strong></div>
+<div class="description" style="text-align: left;"><strong> <a href="https://documenter.getpostman.com/view/15089643/TzRNGAgp" target="_blank">https://documenter.getpostman.com/view/15089643/TzRNGAgp</a><br /></strong></div>
 <div class="description" style="text-align: left;">&nbsp;</div>
 <div class="description" style="text-align: left;">Puede utilizar <span style="color: #ff0000;"><strong><a href="https://prueba-tul.herokuapp.com">https://prueba-tul.herokuapp.com</a></strong> <span style="color: #000000;">(este servidor duerme, en la primer petici&oacute;n por favor esperar unos 30 segundos, en las siguientes peticiones ya estar&aacute; despierto y responder&aacute; m&aacute;s r&aacute;pido)</span> <span style="color: #000000;">en vez de su <span style="color: #ff0000;">{{host}} o <a href="http://127.0.0.1:8000,">http://127.0.0.1:8000</a><span style="color: #000000;">, </span><span style="color: #000000;">esto hace que no se tenga la necesidad de instalar o crear una instancia de la API si no lo desea, por ejemplo: <a href="https://prueba-tul.herokuapp.com/catalogue" target="_blank">https://prueba-tul.herokuapp.com/catalogue</a></span></span></span></span></div>
 <div class="description" style="text-align: left;">&nbsp;</div>
